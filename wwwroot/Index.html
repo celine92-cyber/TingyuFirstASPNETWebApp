@@ -3,37 +3,53 @@
 <head>
     <meta charset="utf-8" />
     <title>Tingyu Huang Website</title>
+    <!-- add css style link -->
     <link href="css/main.css" rel="stylesheet" />
+    <!-- add icon link -->
+    <link rel="icon" href="../img/web_icon.jpg">
 </head>
+
 <body>
+    <!-- Personal Info -->
     <h1>Tingyu Huang </h1>
-    <img src="img/photo_Tingyu - Copy.jpg" / width="100" height="100">
-    <p>Tingyu Huang is a student studying Information System at Brigham Young Univeristy</p>
+    <img src="img/fuji.jpg" width="400" height="288" />
+    <p>I enjoy shooting photographies for others and myself.</p>
     <br />
-    <p>Pop quiz: What color does Tingyu likes the most?</p>
-    <ul class="quiz">
-        <li>A:White</li>
-        <li>B:Purple</li>
-        <li>C:Black</li>
-        <li>D:Beige</li>
+    <p>
+        What do I want to learn from IS 413 class?
+        First, I want to get familiar and know how to write web apps using .NET MVC Core Framework.
+        Second, I hope to have a deeper understanding about interacting with APIs and using REACT to build front end application that can change data without reloading.
+        Third, I wish I can strengthen my soft skills like communicating and teamwork through the course and the designed group projects.
+    </p>
+    <br /><br />
+
+    <p>TOP 3 Jobs that I am most interested in: </p>
+    <ul class="jobs">
+        <li>Entreprenuer</li>
+        <li>Web Developer</li>
+        <li>Business Analyst</li>
     </ul>
 
-    <h2>Fan Mail</h2>
+    <!-- Grade Calculator -->
+    <h2>Calculate Your 413 Grade</h2>
     <form>
-        <label>From: </label>
-        <input id="from"/>
+        <label>All Assignments Score</label>
+        <input id="assignments" type="number"/>
+        <br />
+        <label>Group Projects Score</label>
+        <input id="groupProjects" type="number" />
+        <br />
+        <label>Quizzes Score</label>
+        <input id="quizzes" type="number" />
+        <br />
+        <label>Exams Score</label>
+        <input id="exams" />
+        <br />
+        <label>Intex Score</label>
+        <input id="intex" type="number" />
         <br /><br />
-        <label>Email: </label>
-        <input id="email"/>
-        <br /><br />
-        <label>Subject: </label>
-        <input id="subject"/>
-        <br /><br />
-        <label>Message: </label>
-        <textarea rows="5" id="message"> </textarea>
-        <br /><br />
-        <input type="submit" value="Send Message" id="submitButton"/>
+        <input type="submit" value="Calculate My Grade" id="submitButton" class="submit" />
     </form>
-    <script src="js/quiz.js"></script>
+    <script src="js/calculator.js"></script>
 </body>
 </html>
