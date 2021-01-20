@@ -1,5 +1,8 @@
 ﻿
+//function calc() will automatically starts when user submit the form
+
 function calc() {
+    // define variables
     var assignmentsScore;
     var groupProjectsScore;
     var quizzesScore;
@@ -8,6 +11,7 @@ function calc() {
     var finalGrade;
     var letterGrade;
 
+    //get data
     assignmentsScore = parseFloat(document.getElementById("assignments").value);
     groupProjectsScore = parseFloat(document.getElementById("groupProjects").value);
     quizzesScore = parseFloat(document.getElementById("quizzes").value);
@@ -16,6 +20,7 @@ function calc() {
     finalGrade = assignmentsScore * 0.5 + groupProjectsScore * 0.1 + quizzesScore * 0.1 + examsScore * 0.2 + intexScore * 0.1;
     Math.round(finalGrade);
 
+    //calculate letter grade
     if (finalGrade >= 94) { letterGrade = "A"; }
     else if (finalGrade >= 90 && finalGrade < 94) { letterGrade = "A-"; }
     else if (finalGrade >= 87 && finalGrade < 90) { letterGrade = "B+"; }
