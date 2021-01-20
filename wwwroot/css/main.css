@@ -16,3 +16,12 @@ input.submit {
     width:160px;
     height: 80px;
 }
+
+p {
+    width:750px;
+}
+
+body {
+    margin: auto;
+    max-width: 500px;
+}

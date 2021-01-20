@@ -15,13 +15,12 @@
     <img src="img/fuji.jpg" width="400" height="288" />
     <p>I enjoy shooting photographies for others and myself.</p>
     <br />
+    <h2>What do I want to learn from IS 413 class?</h2>
     <p>
-        What do I want to learn from IS 413 class?
         First, I want to get familiar and know how to write web apps using .NET MVC Core Framework.
         Second, I hope to have a deeper understanding about interacting with APIs and using REACT to build front end application that can change data without reloading.
         Third, I wish I can strengthen my soft skills like communicating and teamwork through the course and the designed group projects.
     </p>
-    <br /><br />
 
     <p>TOP 3 Jobs that I am most interested in: </p>
     <ul class="jobs">
@@ -32,23 +31,23 @@
 
     <!-- Grade Calculator -->
     <h2>Calculate Your 413 Grade</h2>
-    <form>
+    <form onsubmit="return calc()">
         <label>All Assignments Score</label>
-        <input id="assignments" type="number"/>
+        <input id="assignments"  min="0" max="100" step=". 01" required />
         <br />
         <label>Group Projects Score</label>
-        <input id="groupProjects" type="number" />
+        <input id="groupProjects"  min="0" max="100" step=". 01" required />
         <br />
         <label>Quizzes Score</label>
-        <input id="quizzes" type="number" />
+        <input id="quizzes"  min="0" max="100" step=". 01" required />
         <br />
         <label>Exams Score</label>
-        <input id="exams" />
+        <input id="exams"  min="0" max="100" step=". 01" required />
         <br />
         <label>Intex Score</label>
-        <input id="intex" type="number" />
+        <input id="intex" min="0" max="100" step=". 01" required />
         <br /><br />
-        <input type="submit" value="Calculate My Grade" id="submitButton" class="submit" />
+        <input type="submit" value="Calculate My Grade" id="submit" class="submit" />
     </form>
     <script src="js/calculator.js"></script>
 </body>
